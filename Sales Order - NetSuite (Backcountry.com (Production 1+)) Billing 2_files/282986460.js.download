@@ -1,0 +1,4 @@
+var NS=window.NS||{};NS.Help=NS.Help||{};
+(function(b){b.getHelpUrl=function(a){a=a.taskId;return"/app/help/helpcenter.nl?"+(0===a.indexOf("uber_")?"search\x3d"+a.substring(5):"topic\x3d"+a)};b.getFieldHelpUrl=function(a){var b="/core/help/fieldhelp.nl?f\x3d"+a.fieldId+"\x26t\x3ddummy";a.isEdit&&(b="/core/help/admin/helpfieldeditform.nl?f\x3d"+a.fieldId+"\x26t\x3ddummy");for(var c in a.parameters){var d=a.parameters[c];d&&(b=b+"\x26"+c+"\x3d"+d)}return b};b.openHelpTopic=function(a){a.isEdit?(a=b.getHelpUrl(a),window.open(a,"helpedit","toolbar\x3dyes,menubar\x3dyes,scrollbars\x3dyes,location\x3dyes,resizable\x3dyes").focus()):
+window.open(b.getHelpUrl(a),"_blank").focus()}})(NS.Help);
+//# sourceMappingURL=/assets/help_service/282986460.map

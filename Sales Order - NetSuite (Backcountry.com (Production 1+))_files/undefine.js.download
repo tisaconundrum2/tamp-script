@@ -1,0 +1,1 @@
+if(typeof define!=="undefined"&&!!define.suitescript){window._tmp_def=define;define=undefined;}
